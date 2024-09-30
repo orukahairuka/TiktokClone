@@ -164,7 +164,7 @@
 				3BFBB4DE2CA83FC700A42C62 /* Notifications */,
 				3BFBB4DD2CA83FC300A42C62 /* Profile */,
 				3BFBB4DC2CA83FC000A42C62 /* Root */,
-				3BFBB4DB2CA83FBC00A42C62 /* New Group2 */,
+				3BFBB4DB2CA83FBC00A42C62 /* Search */,
 				3BFBB4DA2CA83FB800A42C62 /* New Group1 */,
 				3BFBB4D92CA83FB500A42C62 /* New Group */,
 			);
@@ -200,11 +200,11 @@
 			path = "New Group1";
 			sourceTree = "<group>";
 		};
-		3BFBB4DB2CA83FBC00A42C62 /* New Group2 */ = {
+		3BFBB4DB2CA83FBC00A42C62 /* Search */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group2";
+			path = Search;
 			sourceTree = "<group>";
 		};
 		3BFBB4DC2CA83FC000A42C62 /* Root */ = {

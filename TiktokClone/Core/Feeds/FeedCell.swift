@@ -20,8 +20,29 @@ struct FeedCell: View {
                 }
             VStack {
                 Spacer()
-                VStack {
-                    Text("carlos.sainz")
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text("carlos.sainz")
+                            .fontWeight(.semibold)
+                        Text("Rocket ship prepare for takeoff!!!")
+                    }
+                    .foregroundStyle(.white)
+                    .font(.subheadline)
+                    Spacer()
+                    
+                    VStack {
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "heart.fill")
+                        }
+                        
+                        Button {
+                            
+                        }label: {
+                            Image(systemName: "heart.fill")
+                        }
+                    }
                 }
             }
         }

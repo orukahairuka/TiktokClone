@@ -20,7 +20,7 @@ struct FeedCell: View {
                 }
             VStack {
                 Spacer()
-                HStack {
+                HStack (alignment: .bottom){
                     VStack(alignment: .leading) {
                         Text("carlos.sainz")
                             .fontWeight(.semibold)
@@ -30,21 +30,50 @@ struct FeedCell: View {
                     .font(.subheadline)
                     Spacer()
                     
-                    VStack {
+                    VStack (spacing: 28){
+                        
+                        Circle()
+                            .frame(width: 48, height: 48)
+                            .foregroundStyle(.gray)
                         Button {
                             
                         } label: {
                             Image(systemName: "heart.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundStyle(.white)
                         }
                         
                         Button {
                             
                         }label: {
-                            Image(systemName: "heart.fill")
+                            Image(systemName: "ellipsis.bubble.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundStyle(.white)
+                        }
+                        
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "bookmark.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundStyle(.white)
+                        }
+                        
+                        Button {
+                            
+                        } label: {
+                            Image(systemName: "arrowshape.turn.up.right.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundStyle(.white)
                         }
                     }
                 }
             }
+            .padding()
         }
     }
 }

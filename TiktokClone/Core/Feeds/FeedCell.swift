@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct FeedCell: View {
+    let post: Int
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Rectangle()
+                .fill(.pink)
+                .containerRelativeFrame([.horizontal, .vertical])
+                .overlay {
+                    Text("Post \(post)")
+                        .foregroundStyle(.white)
+                }
+            VStack {
+                Spacer()
+                VStack {
+                    Text("carlos.sainz")
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    FeedCell()
+    FeedCell(post: 2)
 }
